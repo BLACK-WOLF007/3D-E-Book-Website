@@ -1,0 +1,329 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    
+font-family: 'Montserrat Alternates', sans-serif;
+cursor:url('Capture_pencil-removebg-preview.PNG'), auto;
+
+}
+
+::selection{
+    color: rgb(0, 0, 0);
+    background-color: #d9e71e;
+}
+::-webkit-scrollbar{
+    width: 16px;  
+  }
+  ::-webkit-scrollbar-track{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 16px;
+  }
+  ::-webkit-scrollbar-thumb{
+   background:#90d1df;
+   border-radius: 16px;
+  }
+
+  @keyframes move{
+      from{margin-left:0rem;}
+      to{margin-left:2rem;}
+  }
+.cont{
+    /* min-width: fit-content; */
+    color: #000000;
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:start;
+    height: 3rem;
+    margin-top: -2rem;
+    position: fixed;
+    top: 0;
+    width: 97.5%;  
+    z-index: 9999;  
+
+}
+
+
+.cont_part{
+    width:10%;
+    height:5%;
+    color: #000000;
+    padding:   1rem;
+    text-align: center;
+    margin-top: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform:perspective(10px);
+    font-family: 'Raleway', sans-serif;
+    font-weight:bolder;
+}
+.cont_part img{
+    width: 100%;
+    margin-top: -8px;
+    height: 2rem;
+}
+.cont_part a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-weight:bolder;
+
+  }
+header{
+    background: rgb(172,175,220);
+    background: linear-gradient(180deg, rgba(172,175,220,1) 0%, rgba(151,176,217,1) 27%, rgba(38,191,214,1) 85%, rgba(255,255,255,1) 97%);
+background-repeat: no-repeat;
+    width: 100%;
+    height: 37.5rem;
+}
+header p{
+    padding-top:7rem;
+    color: #e7e0e0;
+    font-size: 0.8rem;
+    margin-left: 3rem;
+}
+header h1{
+    font-family: 'Libre Baskerville', serif;
+    color: #ffffff;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    background-image: url('https://media.tenor.com/gSEPGR-zir4AAAAC/spiderman.gif');
+    background-size:contain;
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+header h1 span{
+    font-family: 'Libre Baskerville', serif;
+    color:#e4f30d;   
+}
+header img{
+    margin-top:-22rem;
+    position: relative;
+    z-index: 11;
+    width: 30%;
+    margin-left:50rem;
+}
+header .below-txt{
+    margin-top:-5rem;
+    color: #e7e0e0;
+}
+.search-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    border:2px solid #e7e0e0;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    background: transparent;
+    border-radius:  5px 0px 0px 5px;
+}
+.material-symbols-outlined{
+    color: aliceblue;
+    font-size: 17px;
+}
+header input[type=text]{
+     width: 25rem;
+     height: 2.5rem;
+     top:-0.1rem;
+     position: relative;
+     z-index: 77;
+     border: 1px solid #e7e0e0;
+     border-radius: 0px 5px 5px 0px;
+     padding-left: 5px;
+     color: #33a5b9;
+     font-size: 17px;
+}
+header input:focus{
+    padding-left:5px ;
+    outline: 2px solid #00aec9;
+    box-shadow: 2px 2px 5px 5px #00aec9;
+    caret-color: #00aec9;
+}
+/* ?      loading css starts */
+#loading{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background: #fff url('Ripple-1s-200px.gif') no-repeat center;   
+  z-index: 99999;
+  margin:0px;
+  padding:0px;
+}
+
+/* ?loading ends */
+
+.book21{
+    width:100%;
+    height: 23rem;
+    padding-top: 1rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.8799894957983193) 0%, rgba(38,191,214,0.6979166666666667) 57%, rgba(255,255,255,0.6979166666666667) 100%);
+}
+.book1{
+    width: 16%;
+    float: left;
+    padding-top: 3rem;
+}
+.book21 h1{
+    font-weight: bolder;
+    font-family: 'Rubik', sans-serif;
+    font-size: 4.5rem;
+    width: 5%;
+    margin-left: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 3px #96ca81;
+}
+.book21 h1:hover{
+    color: #dbdbdb;
+    -webkit-text-stroke: 3px #dbdbdb;
+} 
+.book-cover img{
+    width: 50%;
+    margin-left: 6rem;
+    top:-2rem;
+    position: relative;
+    z-index: 55;
+    
+    /* clip-path: circle(51%); */
+}
+.book-cover img:hover{
+
+    box-shadow:1px 1px 3px #131313;
+}
+
+
+
+.head1 h2{
+    width: 90%;
+    font-weight:500;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4.5rem;
+    margin-left: 3rem;
+    text-align: center;
+    background-image: url('https://media.tenor.com/gSEPGR-zir4AAAAC/spiderman.gif');
+    background-size:contain;
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    text-decoration: underline;
+}
+
+footer{
+    background: #ffffff;
+    font-family: 'Manjari', sans-serif;
+
+}
+
+footer img{
+    width: 20%;;
+}
+footer .column{
+    position: absolute;
+    margin-top: -10rem;
+    margin-left: 50rem;
+}
+footer .column li{
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding-top: 0.5rem;
+  color: #555454;
+
+}
+
+footer .column li:nth-child(1){
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+footer .column li a{
+    text-decoration: none;
+    color: #555454;
+  }
+  footer .column li a:hover{
+    text-decoration: none;
+    color: #00d7fd;
+}
+footer .below-logo{
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 2rem;
+    font-size: 0.8rem;
+}
+footer .social-media{
+    color: #818181;
+}
+footer .social-media li{
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding-top: 0.5rem;
+    display: inline;
+    padding-left: 1rem;
+    top: -2rem;
+    position: relative;
+}
+footer .social-media{
+    margin-left: 1rem;
+}
+footer .social-media li a{
+    color:#818181 ;
+}
+
+.fa-whatsapp:hover{
+    color: #10e055;
+}
+.fa-youtube:hover{
+    color: #ff0e0e;
+
+}
+.fa-snapchat-ghost:hover{
+    color: #ffb006;
+
+}
+.fa-instagram:hover{
+    color: #d506ff;
+
+}
+.fa-facebook:hover{
+    color: #087bff;
+}
+.copyright li{
+    display: inline;
+    font-size: 0.7rem;
+}
+.copyright ul{
+    text-align: center;
+}
+.copyright li:nth-child(1){
+    display: inline;
+    font-size: 0.9rem;
+    left: -28rem;
+    position: relative;
+}
+.copyright li:nth-child(2){
+    display: inline;
+    font-size: 0.9rem;
+    left: 34rem;
+    position: relative;
+}
+.copyright li:nth-child(3){
+    display: inline;
+    font-size: 0.9rem;
+    left: 17rem;
+    position: relative;
+}
